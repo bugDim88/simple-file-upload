@@ -10,6 +10,8 @@ urlpatterns = [
     url(r'^$', views.home, name='home'),
     url(r'^uploads/simple/$', views.simple_upload, name='simple_upload'),
     url(r'^uploads/form/$', views.model_form_upload, name='model_form_upload'),
+    url(r'^uploads/api/simple/$', views.json_upload),
+    url(r'^uploads/api/form/$', views.json_upload_model),
     url(r'^admin/', admin.site.urls),
 ]
 
